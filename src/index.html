@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoInsurance</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        header { background-color: #007bff; color: white; padding: 10px; text-align: center; }
+        main { padding: 15px; }
+        .services { display: flex; justify-content: space-around; margin-top: 20px; }
+        .service { width: 30%; text-align: center; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+        img { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DemoInsurance</h1>
+        <p>Your Trusted Insurance Partner</p>
+    </header>
+    
+    <main>
+        <h2>Welcome to DemoInsurance</h2>
+        <p>Providing reliable insurance solutions for your every need.</p>
+        <img src="../assets/hero-chat.png" alt="Insurance Image">
+
+        <div class="services">
+            <div class="service">
+                <h3>Auto Insurance</h3>
+                <p>Comprehensive coverage for your vehicles.</p>
+            </div>
+            <div class="service">
+                <h3>Home Insurance</h3>
+                <p>Protect your home and belongings from unforeseen events.</p>
+            </div>
+            <div class="service">
+                <h3>Life Insurance</h3>
+                <p>Securing your family's future, today.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DemoInsurance, Inc.</p>
+    </footer>
+     <!--step 1: pass hashed tenantID and generated UUID (in cases of authenticated bots , hashed UUID to be passed by the customer)
+        step 2: those ids are posted in to that path in app . So make a post request (on server side decrypt the tenant ID and 
+      insert row in to DB - TID ,UUID (pk) , timestamp , txt, src) 
+      step3:point to that iframe path
+      ---complete---
+      )-->
+   <script src="../assets/chat-iframe.js"></script>  
+  <!--   <script src="//code.tidio.co/kwnfdrqc5pqbruui2p2t9m9lciymzuys.js" async></script> -->
+</body>
+</html>
