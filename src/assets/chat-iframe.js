@@ -24,6 +24,7 @@ function initChatUI() {
     chatContainer.style.bottom = '10px';
     chatContainer.style.right = '20px';
     chatContainer.style.width = '380px';
+    chatContainer.style.zIndex = '10000';
     chatContainer.style.display = 'none'; // Initially hidden
     document.body.appendChild(chatContainer);
 
@@ -91,6 +92,7 @@ function displayMinimizedLogo() {
     minimizedLogo.style.position = 'fixed';
     minimizedLogo.style.bottom = '50px';
     minimizedLogo.style.right = '60px';
+    chatContainer.style.zIndex = '10001';
     minimizedLogo.style.cursor = 'pointer';
     document.body.appendChild(minimizedLogo);
 
